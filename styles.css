@@ -27,22 +27,50 @@ label {
     color: #fff;
 }
 
-.main {
+main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.color-picker {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main .color-box {
+.color-picker p {
+    color: #fff;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-picker .color-box {
     width: 50px;
     height: 50px;
     background-color: #333;
     border-radius: 6px;
+    padding: 2px;
 }
 
 #eraser.active {
     background-color: #ccc; /* Ganti dengan warna yang sesuai */
     border: 2px solid #000;
+}
+
+.btn button {
+    background-color: rgb(125, 125, 125);
+    border-radius: 6px;
+    border-width: 0;
+    padding: 5px;
+    width: 70px;
 }
 
 footer {
